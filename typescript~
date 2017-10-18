@@ -1,0 +1,44 @@
+Script started on Mon 09 May 2016 11:30:55 AM EDT
+]777;notify;Command completed;a2ps -R --columns=1 -f14 typescript]0;cshue1@linux-user-110:~]7;file://linux-user-110.dsm.fordham.edu/u/erdos/students/cshue1[cshue1@linux-user-110 ~]$ cat final.cpp
+
+// Christine Shue - April 9, 2016
+// FINAL EXAMINATION
+
+#include <iostream>
+#include <iomanip>
+#include <cmath>
+
+using namespace std;
+double sum(int n);
+
+int main()
+{
+    int n;
+    cout << fixed << showpoint << setprecision(5);
+    do
+    {
+	cout << "Enter n: " << endl;
+	cin >> n;
+    }   while (n < 0);
+    
+    cout << sum(n) << endl;
+    return 0;
+}
+
+double sum(int n)
+{
+    if (n == 1)
+	return 1;
+    else
+	return  (1/double(n*n)) + sum(n-1);
+}
+
+]777;notify;Command completed;cat final.cpp]0;cshue1@linux-user-110:~]7;file://linux-user-110.dsm.fordham.edu/u/erdos/students/cshue1[cshue1@linux-user-110 ~]$ c++ -o fia[Knal fianl[K[Kn[K[Knal.cpp
+]777;notify;Command completed;c++ -o final final.cpp]0;cshue1@linux-user-110:~]7;file://linux-user-110.dsm.fordham.edu/u/erdos/students/cshue1[cshue1@linux-user-110 ~]$ final
+Enter n: 
+6
+1.49139
+]777;notify;Command completed;final]0;cshue1@linux-user-110:~]7;file://linux-user-110.dsm.fordham.edu/u/erdos/students/cshue1[cshue1@linux-user-110 ~]$ exit
+exit
+
+Script done on Mon 09 May 2016 11:31:21 AM EDT

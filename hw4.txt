@@ -1,0 +1,44 @@
+Script started on Wed 02 Mar 2016 12:00:46 PM EST
+]777;notify;Command completed;hw4]7;file://linux-user-108.dsm.fordham.edu/u/erdos/students/cshue1[cshue1@linux-user-108 ~]$ cat hw4.cpp
+
+//Christine Shue - Due: March 3
+//Homework 4
+
+#include<iostream>
+#include<iomanip>
+#include<cmath>
+
+using namespace std;
+
+int main()
+{ 
+    double sum;
+    cout<< fixed << showpoint << setprecision(5);
+    cout<< "n" << "\t\t" << "sum" << endl <<endl;
+    for(int n = 100; n <= 1000; n += 100)
+	{
+	    sum = 0;
+	    for (double i = 1; i <= n; i++)
+	        sum += 1/i;
+ 	    cout<< setw(4) << n << "\t\t" << setw(8) << sum - log(n) << endl;
+	}
+    return 0;
+}
+]777;notify;Command completed;cat hw4.cpp]7;file://linux-user-108.dsm.fordham.edu/u/erdos/students/cshue1[cshue1@linux-user-108 ~]$ c++ -o hw4 hw4.cpp
+]777;notify;Command completed;c++ -o hw4 hw4.cpp]7;file://linux-user-108.dsm.fordham.edu/u/erdos/students/cshue1[cshue1@linux-user-108 ~]$ hw4
+n		sum
+
+ 100		 0.58221
+ 200		 0.57971
+ 300		 0.57888
+ 400		 0.57847
+ 500		 0.57822
+ 600		 0.57805
+ 700		 0.57793
+ 800		 0.57784
+ 900		 0.57777
+1000		 0.57772
+]777;notify;Command completed;hw4]7;file://linux-user-108.dsm.fordham.edu/u/erdos/students/cshue1[cshue1@linux-user-108 ~]$ exit
+exit
+
+Script done on Wed 02 Mar 2016 12:01:37 PM EST

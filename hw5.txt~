@@ -1,0 +1,44 @@
+Script started on Thu 03 Mar 2016 04:25:18 PM EST
+]777;notify;Command completed;a2ps -R --columns=1 -f14 typescript]7;file://linux-user-104.dsm.fordham.edu/u/erdos/students/cshue1[cshue1@linux-user-104 ~]$ cat hw5.cpp
+
+//Christine Shue - Due: March 10, 2016
+//HW 5
+
+#include<iostream>
+#include<iomanip>
+#include<cmath>
+
+int N_TOTAL = 10000;
+double random (unsigned int&seed);
+using namespace std;
+
+int main()
+{
+    double x, y;
+    int n_c = 0;
+    unsigned int seed;
+    for (int n = 0; n <= N_TOTAL; n++)
+	{
+	    x = 2*random(seed);
+	    y = 8*random(seed);
+	    if ((x*x*x) >= y)
+		n_c++;
+	}
+    cout << "The value is : "<< 16 * double(n_c) / double(N_TOTAL)<<endl;
+    return 0;
+}
+double random (unsigned int& seed)
+{
+    const int MODULUS = 15749;
+    const int MULTIPLIER = 69069;
+    const int INCREMENT = 1;
+    seed = ((MULTIPLIER * seed) + INCREMENT) % MODULUS;
+    return double(seed) / double(MODULUS);
+}
+]777;notify;Command completed;cat hw5.cpp]7;file://linux-user-104.dsm.fordham.edu/u/erdos/students/cshue1[cshue1@linux-user-104 ~]$ c++ -o hw5 hw5.cpp
+]777;notify;Command completed;c++ -o hw5 hw5.cpp]7;file://linux-user-104.dsm.fordham.edu/u/erdos/students/cshue1[cshue1@linux-user-104 ~]$ hw5
+The value is : 4.0752
+]777;notify;Command completed;hw5]7;file://linux-user-104.dsm.fordham.edu/u/erdos/students/cshue1[cshue1@linux-user-104 ~]$ exit
+exit
+
+Script done on Thu 03 Mar 2016 04:26:04 PM EST

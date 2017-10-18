@@ -1,0 +1,30 @@
+//Christine Shue - March 16, 2016
+//Lab 7
+
+#include<iostream>
+#include<iomanip>
+#include<cmath>
+
+void get_numbers(int a,int b, int c, int d,int n);
+
+using namespace std;
+
+int main()
+{
+    int a,b,c,d,n;
+    get_numbers(a,b,c,d,n);
+    cout<<"a = "<<a<<"\nb = "<<b<<"\nc = "<<c<<"\nd = "<<d<<"\nn = "<<n<<endl;
+}
+
+void get_numbers(int a,int b, int c, int d,int n)
+{
+    n = INT_MAX;
+    for(int a=1; a < 10; ++a)
+	for (int b=a+1; b<10; ++b)
+	    for (int c=b+1; c<10; ++c)
+		for (int d=c+1; d<10; ++d)
+		    if (a*a + b*b == c*c + d*d)
+			if (a*a + b*b < n)
+			    n = a*a + b*b;
+}
+

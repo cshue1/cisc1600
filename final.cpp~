@@ -1,0 +1,24 @@
+
+// Christine Shue - April 9, 2016
+// FINAL EXAMINATION
+
+#include <iostream>
+#include <iomanip>
+#include <cmath>
+
+using namespace std;
+int get_n(int n);
+
+int main()
+{
+    n = get_n();
+    
+}
+
+int get_n()
+{
+    int n;
+    cout << "Enter n: " << endl;
+    cin << n;
+    return n;
+}

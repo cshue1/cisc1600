@@ -1,0 +1,32 @@
+
+// Christine Shue - April 27, 2016
+// Lab 10
+
+#include <iostream>
+#include <iomanip>
+#include <cmath>
+
+int get_n(int n);
+int sum(int n,int i);
+
+using namespace std;
+
+int main()
+{
+    int n;
+    get_n(n);
+}
+
+int get_n(int n)
+{
+    do
+    {
+	cout << "enter a positive number:" << endl;
+	cin >> n;
+    }while (n < 0);
+    return n;
+}
+
+int sum(int n, int i)
+{
+}

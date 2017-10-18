@@ -1,0 +1,24 @@
+
+//Christine Shue - Due: March 3
+//Homework 4
+
+#include<iostream>
+#include<iomanip>
+#include<cmath>
+
+using namespace std;
+
+int main()
+{
+    double sum=0;
+    cout<< fixed << showpoint << setprecision(5);
+    cout<< "n" << "\t\t" << "sum" << endl;
+    for(int n=100; n<1100; n+=100)
+	{
+	    for (int i=1; i<n; i++)
+	        sum=sum+(1/i);
+	    sum=sum-log(n);
+	    cout<< setw(4) << n << "\t\t" << setw(8) << sum << endl;
+	}
+    return 0;
+}

@@ -1,0 +1,26 @@
+
+//Christine Shue March 30, 2016
+//Quiz 2
+
+#include<iostream>
+#include<iomanip>
+#include<cmath>
+
+double function_1 (double x);
+double function_2 (double x);
+
+using namespace std
+
+int main()
+{
+}
+
+double function_1 (double x)
+{
+    return (1-(x+3)*(x+3));
+}
+
+double function_2 (double x)
+{
+    return (-x*-x+4);
+}

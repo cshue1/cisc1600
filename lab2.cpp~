@@ -1,0 +1,14 @@
+
+//Christine Shue
+//February 3, 2016
+#include<iostream>
+#include<iomanip>
+using namespace std;
+double main()
+{
+    double a,b,c,x;
+    cout<<setprecision(7);
+    cout<<"enter 4 numbers: ">>
+    cin>>a>>b>>c>>x;
+    y=abs((log3(a)-sin(b))/(a*b)))-(power(((power(x,c)-power(e,2a),(0.03*c)))
+    cout<<"y = "<<y<<endl;

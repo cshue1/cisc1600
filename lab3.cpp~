@@ -1,0 +1,19 @@
+
+//Christine Shue - February 10, 2016
+//Lab 3
+#include<iostream>
+#include<iomanip>
+#include<cmath>
+using namespace std
+void get_data(double&a,double&b,double&c)
+double triangle_area(double a,double b, double c)    
+int main()
+{
+    get_data;
+    cout<<a<<b<<c;
+}
+void  get_data(double&a,double&b,double&c)
+{
+    cout>>"Enter 3 numbers (a,b,c): ";
+    cin<<a<<b<<c;
+}    
